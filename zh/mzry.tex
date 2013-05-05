@@ -1,8 +1,15 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 
+\usepackage{xunicode}
+\usepackage{amsmath}
+
 % moderncv themes
 \moderncvstyle{classic}
-\moderncvcolor{red}
+\moderncvcolor{black}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand*{\namefont}{\fontsize{50}{52}\mdseries\upshape}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\usepackage[scale=0.75]{geometry}
 \usepackage{geometry}
@@ -30,13 +37,18 @@
 
 \begin{document}
 \makecvtitle
+%\maketitle
 
 \section{教育经历}
 \cventry{2010--至今}{\textsf{学士}}{电子科技大学}{通信工程}
 {\textit{加权平均分3.07}}
 %{}
-{\textsf{主要课程：}
-TCPIP协议，计算机通信网，交换原理，局域网与城域网，数字信号处理，通信原理，信号与系统等，编码原理，光纤原理，移动通信原理等。}
+{\textsf{主干课程：}
+	离散数学、电路分析基础、模拟电路基础、信号与系统、软件技术基础、数字逻辑设计及应用、电磁场与波、信息论导论、随机信号分析、计算机通信网、
+	微型计算机系统原理及接口应用、数字信号处理、通信原理、移动通信系统。}
+\cventry{2007-2010}{\textsf{高中}}{江西省南康中学}{}
+{}
+{获全国青少年信息学奥林匹克联赛省级一等奖保送至电子科技大学。同时还获得哈尔滨工业大学、华南理工大学、大连理工大学的保送生资格。}
 
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
@@ -54,33 +66,51 @@ TCPIP协议，计算机通信网，交换原理，局域网与城域网，数字
 		\item[\textsf{开发平台}] Jdk1.7, J2ee platform, maven
 		\item[\textsf{开发工具}] IntelliJ IDEA, MySQL, chrome
 		\item[\textsf{相关框架}] Struts2, Spring, Hibernate, Sitemesh, Bootstrap, jQuery
-		\item[\textsf{个人职责}] 负责整体前端UI设计与实现，以及系统整体测试。
+		\item[\textsf{个人职责}] 负责整体前端UI设计与实现，以及与后台的结合，还负责对系统进行整体测试。
 	\end{description}
 }
-\subsection{社会经验}
+\subsection{竞赛经验}
+\cventry{2010--至今}{电子科技大学ACM/ICPC集训队}{}{}{}{
+	\begin{itemize}
+		\item 深入学习研究了各种算法如图论、动态规划，常用数据结构如动态树、KD树、Splay，拥有较强的代码能力。
+		\item 在TopCoder公司举办的SRM中排名前$8\%$(2013-5-5)，该比赛要求快速地写出正确高效的代码和找出其他选手代码中bug。
+		\item 在ACM/ICPC的竞赛中，得到了大量团队合作解题的经验。
+	\end{itemize}
+}
 \cventry{2013}{\textsf{NOI2013全国青少年信息学奥林匹克竞赛四川代表队选拔赛}}{命题工作}{}{}{}
 \cventry{2012}{\textsf{第四届四川省大学生程序设计竞赛}}{命题与裁判工作}{}{}{}
 \cventry{2012}{\textsf{NOI2012全国青少年信息学奥林匹克竞赛四川代表队选拔赛}}{命题与裁判工作}{}{}{}
 
 \section{荣誉}
 \subsection{ACM-ICPC}
-\cvline{2012}{2012年ACM-ICPC亚洲区预选赛成都赛区 \textsf{金牌}}
-\cvline{2012}{2012年ACM-ICPC亚洲区预选赛金华赛区 \textsf{金牌（亚军）}}
-\cvline{2011}{2011年ACM-ICPC亚洲区预选赛成都赛区 \textsf{金牌（亚军）}}
+\cvline{2012}{第37届ACM-ICPC亚洲区预选赛成都赛区 \textsf{金牌}}
+\cvline{2012}{第37届ACM-ICPC亚洲区预选赛金华赛区 \textsf{金牌（亚军）}}
+\cvline{2012}{四川大学程序设计竞赛 \textsf{冠军}}
+\cvline{2012}{第10届电子科技大学程序设计竞赛 \textsf{亚军}}
+\cvline{2011}{第36届ACM-ICPC亚洲区预选赛成都赛区 \textsf{金牌（亚军）}}
+\cvline{2011}{第36届ACM-ICPC亚洲区预选赛北京赛区 \textsf{金牌}}
 \cvline{2011}{第三届四川省大学生程序设计竞赛 \textsf{亚军}}
-\cvline{2011}{2011年ACM-ICPC亚洲区预选赛福州赛区资格赛 \textsf{金牌}}
-\cvline{2010}{2010年ACM-ICPC亚洲区预选赛福州赛区 \textsf{银牌}}
-\cvline{2010}{2010年ACM-ICPC亚洲区预选赛杭州赛区 \textsf{银牌}}
+\cvline{2011}{第36届ACM-ICPC亚洲区预选赛福州赛区资格赛 \textsf{金牌}}
+\cvline{2010}{第35届ACM-ICPC亚洲区预选赛福州赛区 \textsf{银牌}}
+\cvline{2010}{第35届ACM-ICPC亚洲区预选赛杭州赛区 \textsf{银牌}}
+
+\subsection{证书}
+\cvline{2012}{全国计算机等级考试四级网络工程师}
 
 \section{语言技能}
-\cventry{英语}{大学英语四级}{436分（通过）}{}{}{}
+\cventry{英语}{全国大学英语四级考试}{通过}{}{}{}
 
 \section{计算机技能}
-\cvitem{\textsf{操作系统}}{linux, mac os, windows}
+\cvitem{\textsf{操作系统}}{linux(arch linux), OS X, windows}
 \cvitem{\textsf{团队开发}}{Subversion, Git}
 \cvitem{\textsf{数据库}}{MySQL}
 \cvitem{\textsf{编程语言}}{C, C++, Java(Java EE), Javascript, C\#}
-\cvitem{\textsf{开发工具}}{Vim, IntelliJ IDEA, Visual Studio, eclipse}
-\cvitem{\textsf{其它工具}}{LaTex}
+\cvitem{\textsf{开发工具}}{Vim, IntelliJ IDEA, Visual Studio}
+\cvitem{\textsf{其它工具}}{\LaTeX}
+
+\section{个人能力}
+\cvlistitem{拥有在短暂的时间内快速学习和解决问题。}
+\cvlistitem{拥有良好的思维能力和有效的沟通能力。}
+\cvlistitem{对新技术有不错的自学能力。}
 
 \end{document}
