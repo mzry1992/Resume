@@ -4,15 +4,18 @@
 \usepackage{amsmath}
 
 % moderncv themes
-\moderncvstyle{classic}
-\moderncvcolor{black}
+\moderncvstyle{banking}
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.95,0.20,0.20}% red
+\definecolor{color2}{rgb}{0.0,0.0,0.0}% dark grey
+%\moderncvcolor{red}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand*{\namefont}{\fontsize{50}{52}\mdseries\upshape}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\usepackage[scale=0.75]{geometry}
-\usepackage{geometry}
+\usepackage[top=3.2cm, bottom=3.2cm, left=3.2cm, right=3.2cm]{geometry}
+%\usepackage{geometry}
 
 \usepackage{xeCJK}
 %\setsansfont{Monaco}
@@ -39,14 +42,21 @@
 \makecvtitle
 %\maketitle
 
+\section{个人信息}
+\cvitem{姓名}{李昀}
+\cvitem{年龄}{20(1992-10-5)}
+\cvitem{毕业时间}{2014-6}
+
 \section{教育经历}
-\cventry{2010--至今}{\textsf{学士}}{电子科技大学}{通信工程}
-{\textit{加权平均分3.07}}
-%{}
-{\textsf{主干课程：}
+\cventry{2010--至今}{通信工程}{\textsf{电子科技大学}}{四川省成都市}
+{学士}
+{加权平均分3.07}
+{主干课程：
 	离散数学、电路分析基础、模拟电路基础、信号与系统、软件技术基础、数字逻辑设计及应用、电磁场与波、信息论导论、随机信号分析、计算机通信网、
 	微型计算机系统原理及接口应用、数字信号处理、通信原理、移动通信系统。}
-\cventry{2007-2010}{\textsf{高中}}{江西省南康中学}{}
+
+~\\
+\cventry{2007-2010}{高中}{\textsf{江西省南康中学}}{江西省南康市}
 {}
 {获全国青少年信息学奥林匹克联赛省级一等奖保送至电子科技大学。同时还获得哈尔滨工业大学、华南理工大学、大连理工大学的保送生资格。}
 
@@ -57,12 +67,11 @@
 
 \section{相关经验}
 \subsection{项目经验}
-\cventry{2012--至今}{\textsf{数据库 JavaEE}}{UESTC ACM-ICPC Online Judge前端相关开发}{}{}{
+\cventry{2012--至今}{数据库 JavaEE}{\textsf{UESTC ACM-ICPC Online Judge前端相关开发}}{}{}{
+	这个项目实现了一个Online judge用来提供在线测评服务并被用来帮助校ACM/ICPC队伍组织和管理各种训练计划和相关比赛。
+	此系统还将运用于大学生计算机课程上机实验。
 	\begin{description}
 		\item[\textsf{项目主页}] \texttt{https://gitcafe.com/UESTC\_ACM/cdoj}
-		\item[\textsf{项目内容}] ~\\
-			这个项目实现了一个Online judge用来提供在线测评服务并被用来帮助校ACM/ICPC队伍组织和管理各种训练计划和相关比赛。
-			此系统还将运用于大学生计算机课程上机实验。
 		\item[\textsf{开发平台}] Jdk1.7, J2ee platform, maven
 		\item[\textsf{开发工具}] IntelliJ IDEA, MySQL, chrome
 		\item[\textsf{相关框架}] Struts2, Spring, Hibernate, Sitemesh, Bootstrap, jQuery
@@ -70,16 +79,27 @@
 	\end{description}
 }
 \subsection{竞赛经验}
-\cventry{2010--至今}{电子科技大学ACM/ICPC集训队}{}{}{}{
+\cventry{2010--至今}{队员}{\textsf{电子科技大学ACM/ICPC集训队}}{}{}{
 	\begin{itemize}
 		\item 深入学习研究了各种算法如图论、动态规划，常用数据结构如动态树、KD树、Splay，拥有较强的代码能力。
 		\item 在TopCoder公司举办的SRM中排名前$8\%$(2013-5-5)，该比赛要求快速地写出正确高效的代码和找出其他选手代码中bug。
 		\item 在ACM/ICPC的竞赛中，得到了大量团队合作解题的经验。
 	\end{itemize}
 }
-\cventry{2013}{\textsf{NOI2013全国青少年信息学奥林匹克竞赛四川代表队选拔赛}}{命题工作}{}{}{}
-\cventry{2012}{\textsf{第四届四川省大学生程序设计竞赛}}{命题与裁判工作}{}{}{}
-\cventry{2012}{\textsf{NOI2012全国青少年信息学奥林匹克竞赛四川代表队选拔赛}}{命题与裁判工作}{}{}{}
+\cventry{2012--2013}{命题与裁判工作}{\textsf{NOI2012/2013 全国青少年信息学奥林匹克竞赛四川代表队选拔赛}}{}{}{
+	\begin{itemize}
+		\item 国内最高水平信息学竞赛的队员选拔赛
+		\item 5小时内解决3道问题，难度极大
+		\item 四川省内中学水平差异较大命题难度高
+	\end{itemize}
+}
+
+~\\
+\cventry{2012}{命题与裁判工作}{\textsf{第四届四川省大学生程序设计竞赛}}{}{}{
+	\begin{itemize}
+		\item 四川省大学生程序设计竞赛平均水平较低，需要设计出难度不高但是富有价值的问题
+	\end{itemize}
+}
 
 \section{荣誉}
 \subsection{ACM-ICPC}
@@ -94,23 +114,21 @@
 \cvline{2010}{第35届ACM-ICPC亚洲区预选赛福州赛区 \textsf{银牌}}
 \cvline{2010}{第35届ACM-ICPC亚洲区预选赛杭州赛区 \textsf{银牌}}
 
-\subsection{证书}
-\cvline{2012}{全国计算机等级考试四级网络工程师}
+\section{专业技能}
+\subsection{语言技能}
+\cvitem{\textsf{全国大学英语四级考试}}{通过}
 
-\section{语言技能}
-\cventry{英语}{全国大学英语四级考试}{通过}{}{}{}
-
-\section{计算机技能}
+\subsection{计算机技能}
 \cvitem{\textsf{操作系统}}{linux(arch linux), OS X, windows}
 \cvitem{\textsf{团队开发}}{Subversion, Git}
-\cvitem{\textsf{数据库}}{MySQL}
 \cvitem{\textsf{编程语言}}{C, C++, Java(Java EE), Javascript, C\#}
 \cvitem{\textsf{开发工具}}{Vim, IntelliJ IDEA, Visual Studio}
-\cvitem{\textsf{其它工具}}{\LaTeX}
+\cvitem{\textsf{其它工具}}{MySQL, \LaTeX}
+\cvitem{\textsf{相关证书}}{全国计算机等级考试四级网络工程师}
 
-\section{个人能力}
-\cvlistitem{拥有在短暂的时间内快速学习和解决问题。}
-\cvlistitem{拥有良好的思维能力和有效的沟通能力。}
-\cvlistitem{对新技术有不错的自学能力。}
+\subsection{其它技能}
+\cvitem{\textsf{问题解决}}{在短暂的时间内快速分析和解决问题}
+\cvitem{\textsf{学习能力}}{对新技术有不错的自学能力}
+\cvitem{\textsf{团队合作}}{拥有良好的沟通能力}
 
 \end{document}
