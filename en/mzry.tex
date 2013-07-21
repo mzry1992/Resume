@@ -1,32 +1,42 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 
-% moderncv themes
-\moderncvstyle{classic}
-\moderncvcolor{red}
+\usepackage{amsmath}
 
-%\usepackage[scale=0.75]{geometry}
-\usepackage{geometry}
+% moderncv themes
+\moderncvstyle{banking}
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{rgb}{0.95,0.20,0.20}% red
+\definecolor{color2}{rgb}{0.0,0.0,0.0}% dark grey
+
+\usepackage[scale=0.9]{geometry}
+%\usepackage{geometry}
 
 % personal data
 \firstname{Yun}
 \familyname{Li}
-%\title{Resumé title (optional)} 
-\address{University of Electronic Science and Technology of China(UESTC)}{No.2006, Xiyuan Ave, West Hi-Tech Zone, 611731, Chengdu}{Sichuan, P.R.China}
-\mobile{+86~136~7903~3612}                
-%\phone{+2~(345)~678~901}                
-%\fax{+3~(456)~789~012}                 
-\email{muziriyun@gmail.com}                  
+%\title{Resumé title (optional)}
+\address{University of Electronic Science and Technology of China(Qingshuihe Campus)}{No.2006, Xiyuan Ave, West Hi-Tech Zone, Chengdu, Sichuan, P.R.China}{Zip code: 611731}
+\mobile{+86~136~7903~3612}
+%\phone{+2~(345)~678~901}
+%\fax{+3~(456)~789~012}
+\email{muziriyun@gmail.com}
 \homepage{www.mzry1992.com}
-%\extrainfo{additional information}   
-%\photo[64pt][0.4pt]{picture}        
-%\quote{Some quote (optional)}      
+%\extrainfo{additional information}
+%\photo[64pt][0.4pt]{picture}
+%\quote{Some quote (optional)}
 
 \begin{document}
 
 \makecvtitle
 
+\section{Basic Info}
+\cvitem{Name}{Li yun}
+\cvitem{Age}{20(1992-10-5)}
+\cvitem{Graduation time}{2014-6}
+
 \section{Education}
 \cventry{2010--now}{Bachelor of communication engineering}{University of Electronic Science and Technology of China}{Chengdu, Sichuan, P.R.China}{GPA \textit{3.07}}{}
+\cventry{2007-2010}{High school}{Nankang middle school}{Nankang, Jiangxi}{}{Win the first prize of National Olympiad in Informatics in Provinces in 2009, and recommend to the university of electronic science and technology}
 
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
@@ -35,24 +45,44 @@
 
 \section{Experience}
 \subsection{Projects}
-\cventry{2012--2013}{UESTC ACM-ICPC Online Judge}{Committer}{}{}{
+\cventry{2012--now}{Web design, JavaEE}{\textsf{UESTC ACM-ICPC Online Judge}}{}{}{
+    this project is applied to UESTC ACM-ICPC team member's daily training,
+    it support online judge service and a large amount of problems for training programming skill, and create a community that allow users share ideas.
+    This system will also be applied to college students' computer experiment.
 	\begin{description}
-		\item[Project home] \texttt{https://code.google.com/p/cdoj/}
-		\item[Description] ~\\
-			This project is a website use for our UESTC ACM-ICPC team's training and also open for other school. We can add problem for test students' programing language skill and algorithm skill.
-		\item[Development enivornment] Jdk1.7, J2ee platform, maven, C/C++
-		\item[Development tool] IntelliJ IDEA, mySQL, chrome
-		\item[Use technology] Struts2, Spring, Hibernate, Sitemesh, Bootstrap, jQuery
-		\item[My duites] ~
+		\item[Project home] \texttt{https://gitcafe.com/UESTC\_ACM/cdoj}
+		\item[Development environment] Jdk1.7, J2ee platform, maven, C/C++
+		\item[Development tool] IntelliJ IDEA, mySQL workbench, chrome
+		\item[Framework] Struts2, Spring, Hibernate, Sitemesh, Bootstrap, jQuery
+		\item[My duties] ~
 			\begin{itemize}
 				\item Lead the UI design and incorporate feedback
 				\item Test the system before each release
 			\end{itemize}
 	\end{description}
 }
+
 \subsection{Miscellaneous}
-\cventry{2012}{The 4th Sichuan Provincial Collegiate Programming Contest}{Umpire}{}{}{}
-\cventry{2012}{NOI2012 Sichuan Provincial Team Trial Contest}{Umpire}{}{}{}
+\cventry{2010--now}{Team member}{UESTC ACM-ICPC Team}{}{}{
+    \begin{itemize}
+        \item ...
+		\item ...
+		\item ...
+	\end{itemize}
+}
+\cventry{2012-2013}{Judge and problem setter}{National Olympiad in Informatics Sichuan province team selection contest}{}{}{
+	\begin{itemize}
+		\item The top level informatics olympiad contest's team selection contest
+		\item Solve 3 problems in 5 hours, it's superior difficult
+		\item Need high quality problems
+	\end{itemize}
+}
+\cventry{2012}{Judge and problem setter}{The 4th Sichuan Provincial Collegiate Programming Contest}{}{}{}{
+	\begin{itemize}
+		\item Due to large gap between different team, we need simple but ponderable problems
+	\end{itemize}
+}
+
 \subsection{Awards}
 \cventry{2012}{The ACM-ICPC Asia Regional Contest Chengdu Site 2012}{Gold Medal}{}{}{}
 \cventry{2012}{The ACM-ICPC Asia Regional Contest Jinhua Site 2012}{Gold Medal}{}{}{2nd place}
@@ -63,13 +93,18 @@
 \cventry{2010}{The ACM-ICPC Asia Regional Contest Hangzhou Site 2010}{Silver Medal}{}{}{}
 
 \section{Languages}
-\cvitemwithcomment{English}{CET band 4}{436}
+\cvitemwithcomment{English}{CET band 4}{passed}
 
 \section{Computer skills}
-\cvitem{OS}{linux, mac os}
-\cvitem{Languages}{C, C++, Java, Javascript, latex}
-\cvitem{IDE}{Vim, IntelliJ IDEA, VS, Eclipse}
-\cvitem{Tools}{Subversion, Git}
-\cvitem{Algorithm}{Data structures, Dynamic programming, Search, Computation geometry}
+\cvitem{OS}{linux, OS X(primary)}
+\cvitem{Revision control}{Subversion, Git}
+\cvitem{Languages}{C, C++, Java, Javascript}
+\cvitem{IDE}{Vim, IntelliJ IDEA}
+\cvitem{Others}{MySQL, \LaTeX}
+
+\section{Personal skills}
+\cvitem{}{}
+\cvitem{}{}
+\cvitem{}{}
 
 \end{document}
