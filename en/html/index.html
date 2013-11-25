@@ -5,6 +5,7 @@
 		<style type="text/css">
 			html {
 				font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier,sans-serif;
+				font-size: 14pt;
 			}
 			a {
 				text-decoration:none;
@@ -12,107 +13,114 @@
 			#wrap {
 				margin: auto;
 				width: 960px;
+				margin-bottom: 128px;
 			}
+
 			#header {
-				position: relative;
-				margin: 48px 0 72px 0;
+				margin: 48px 0 48px 0;
 			}
 			.name {
-				float: left;
+				text-align: center;
 				font-size: 48pt;
-				position: absolute;
-				bottom: 0px;
-				left: 0px;
+				color: red;
+			}
+			.icon {
+				height: 13px;
+				margin-right: 4px;
 			}
 			.info {
-				text-align: right;
+				text-align: center;
 			}
 			.info > ul {
 				list-style: none;
 			}
 			.info > ul > li {
-				font-style: italic;
-				color: grey;
+				color: black;
 			}
-			#content {
-			}
-			.group {
-			}
-			.line {
-				height: 0px;
-				width: 120px;
-				border: solid 5px;
-				float: left;
-				margin-top: 11px;
-				color: red;
-			}
-			.group > h3 {
-				font-size: 24pt;
-				color: red;
-				margin-left: 150px;
-				margin-bottom: 16px;
-			}
-			.group > h4 {
-				font-size: 16pt;
-				color: red;
-				margin: 0 0 0 150px;
-			}
-			.group > dl > dt {
-				float: left;
-				width: 130px;
-				text-align: right;
-			}
-			.group > dl > dd {
-				margin-left: 150px;
-			}
-			.dl-project {
-				margin: 0;
-			}
-			.dl-project > dt {
-				font-weight: bold;
-			}
-			.dl-project > dd {
-			}
-			.dl-project > dd > ul {
-				margin: 0;
-				padding-left: 20px;
+			ul.inline > li {
+				display: inline;
 			}
 			#links {
-				height: 34px;
+				text-align: center;
 			}
+
 			.nav {
-				margin-left: 0;
-				margin-bottom: 18px;
 				list-style: none;
+			}
+			ul.nav > li {
+				display: inline;
 			}
 			.nav-pills > .active > a, .nav-pills > .active > a:hover {
 				color: #ffffff;
 				background-color: #0088cc;
 			}
 			.nav-pills > li > a {
-				padding-top: 8px;
-				padding-bottom: 8px;
-				margin-top: 2px;
-				margin-bottom: 2px;
+				padding: 4px 12px;
+				margin: 0 4px;
 				-webkit-border-radius: 5px;
 				-moz-border-radius: 5px;
 				border-radius: 5px;
 			}
-			.nav-tabs > li > a, .nav-pills > li > a {
-				padding-right: 12px;
-				padding-left: 12px;
-				margin-right: 2px;
-				line-height: 14px;
+
+			.group > h3 {
+				font-size: 24pt;
+				color: red;
+				margin-bottom: 0;
+				margin-top: 16px;
 			}
-			.nav > li > a {
+			.group > hr {
+				border: 1px red solid;
+				margin-top: 0;
+			}
+			.sub-group > h4 {
+				font-size: 16pt;
+				color: red;
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+			.sub-group > hr {
+				border: 1px red dashed;
+				margin-top: 0;
+			}
+			.sub-group:after, .summary-info:after {
+				content: "."; 
 				display: block;
+				height: 0; 
+				clear: both; 
+				visibility: hidden;
 			}
-			.nav-pills > li {
+			ul.description {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			span.bold {
+				font-weight: bold;
+				margin-right: 8px;
+			}
+			span.status {
+				font-style: italic;
+				float: right;
+			}
+			ul {
+				padding-left: 32px;
+				list-style: circle;
+				margin: 0;
+			}
+
+			.item {
+				margin-bottom: 12px;
+			}
+			.title {
+				font-weight: bold;
+			}
+			.summary {
 				float: left;
+				font-style: italic;
 			}
-			.icon {
-				height: 13px;
-				margin-right: 4px;
+			.time {
+				float: right;
+				font-style: italic;
 			}
 		</style>
 	</head>
@@ -125,11 +133,16 @@
 				</div>
 				<div class="info">
 					<ul>
-						<li>No.2006, Xiyuan Ave, West Hi-Tech Zone, 611731</li>
-						<li>Chengdu, Sichuan, P.R.China</li>
-						<li><img class="icon" src="img/glyphicons_163_iphone.png"/>+86 136 7903 3612</li>
-						<li><img class="icon" src="img/glyphicons_010_envelope.png"/><a href=mailto:muziriyun@gmail.com>muziriyun@gmail.com</a></li>
-						<li><img class="icon" src="img/glyphicons_020_home.png"/><a href="http://www.mzry1992.com">www.mzry1992.com</a></li>
+						<li>University of Electronic Science and Technology of China</li>
+						<li>No.2006, Xiyuan Ave, West Hi-Tech Zone, Chengdu, Sichuan, P.R.China</li>
+						<li>Zip code: 611731</li>
+						<li>
+							<ul class="inline">
+								<li><img class="icon" src="img/glyphicons_163_iphone.png"/>+86 136 7903 3612</li>
+								<li><img class="icon" src="img/glyphicons_010_envelope.png"/><a href=mailto:muziriyun@gmail.com>muziriyun@gmail.com</a></li>
+								<li><img class="icon" src="img/glyphicons_020_home.png"/><a href="http://www.mzry1992.com">www.mzry1992.com</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -144,99 +157,211 @@
 					<li class="active">
 					<a href="http://www.renren.com/313179017">Ren ren</a>
 					</li>
+					<li class="active">
+					<a href="https://gitcafe.com/mzry1992/CV/raw/master/en/mzry.pdf">Download my CV</a>
+					</li>
 				</ul>
 			</div>
 			<div id="content">
 				<div class="group">
-					<div class="line"></div>
+					<h3>Basic Info</h3>
+					<hr/>
+					<ul class="description">
+						<li><span class="bold">Name:</span><span>Li yun</span></li>
+						<li><span class="bold">Age:</span><span>20(1992-10-5)</span></li>
+						<li><span class="bold">Graduation time:</span><span>2014-6</span></li>
+					</ul>
+				</div>
+
+				<div class="group">
 					<h3>Education</h3>
-					<dl>
-						<dt>2010-now</dt>
-						<dd><b>Bachelor of communication engineering</b>, <em>University of Electronic Science
-							and Technology of China</em>, Chengdu, Sichuan, P.R.China, GPA 3.07.</dd>
-					</dl>
+					<hr/>
+					<div class="item">
+						<div class="title">University of Electronic Science and Technology of China</div>
+						<div class="summary-info">
+							<div class="summary">Bachelor of communication engineering, GPA 3.07</div>
+							<div class="time">2010 - now</div>
+						</div>
+						<div class="content">
+						</div>
+					</div>
 				</div>
 				<div class="group">
-					<div class="line"></div>
 					<h3>Experience</h3>
-					<h4>Projects</h4>
-					<dl>
-						<dt>2012-2013</dt>
-						<dd>
-						UESTC ACM-ICPC Online Judge, Committer.
-						<dl class="dl-project">
-							<dt>Project home</dt>
-							<dd><a href="https://gitcafe.com/UESTC_ACM/cdoj">https://gitcafe.com/UESTC_ACM/cdoj</a></dd>
-							<dt>Description</dt>
-							<dd>This project is a website use for our UESTC ACM-ICPC team's training and also open for other school. We can add problem for test students' programing language skill and algorithm skill.</dd>
-							<dt>Development enivornment</dt>
-							<dd>Jdk1.7, J2ee platform, maven, C/C++</dd>
-							<dt>Development tool</dt>
-							<dd>IntelliJ IDEA, mySQL, chrome</dd>
-							<dt>Use technology</dt>
-							<dd>Struts2, Spring, Hibernate, Sitemesh, Bootstrap, jQuery</dd>
-							<dt>My duites</dt>
-							<dd>
-							<ul>
-								<li>Lead the UI design and incorporate feedback</li>
-								<li>Test the system before each release</li>
-							</ul>
-							</dd>
-						</dl>
-						</dd>
-					</dl>
+					<hr/>
+					<div class="sub-group">
+						<h4>Projects</h4>
+						<hr/>
+						<div class="item">
+							<div class="title">UESTC ACM-ICPC Online Judge</div>
+							<div class="summary-info">
+								<div class="summary">Web design, JavaEE</div>
+								<div class="time">2012 - now</div>
+							</div>
+							<div class="content">
+								this project is applied to UESTC ACM-ICPC team member's daily training,
+								it support online judge service and a large amount of problems for training programming skill,
+								and create a community that allow users share ideas.
+								This system will also be applied to college students' computer experiment.
+								<ul class="description">
+									<li><span class="bold">Project home</span><span><a href="https://gitcafe.com/UESTC_ACM/cdoj">https://gitcafe.com/UESTC_ACM/cdoj</a></span></li>
+									<li><span class="bold">Site</span><span><a href="http://acm.uestc.edu.cn:8080">http://acm.uestc.edu.cn:8080</a></span></li>
+									<li><span class="bold">Development environment</span><span>Jdk1.7, J2ee platform, maven, C/C++</span></li>
+									<li><span class="bold">Development tool</span><span>IntelliJ IDEA, mySQL workbench, chrome</span></li>
+									<li><span class="bold">Framework</span><span>Struts2, Spring, Hibernate, Sitemesh, Bootstrap, jQuery</span></li>
+									<li><span class="bold">My duties</span>
+										<span>
+											<ul>
+												<li>Lead the UI design and incorporate feedback</li>
+												<li>Test the system before each release</li>
+											</ul>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-					<h4>Miscellaneous</h4>
-					<dl>
-						<dt>2012</dt>
-						<dd><b>The 4th Sichuan Provincial Collegiate Programming Contest</b>, <em>Umpire</em>.</dd>
-						<dt>2012</dt>
-						<dd><b>NOI2012 Sichuan Provincial Team Trial Contest</b>, <em>Umpire</em>.</dd>
-					</dl>
-
-					<h4>Awards</h4>
-					<dl>
-						<dt>2012</dt>
-						<dd><b>The ACM-ICPC Asia Regional Contest Chengdu Site 2012</b>, <em>Gold Medal</em>.</dd>
-						<dt>2012</dt>
-						<dd><b>The ACM-ICPC Asia Regional Contest Jinhua Site 2012</b>, <em>Gold Medal</em>.<br/>2nd place</dd>
-						<dt>2011</dt>
-						<dd><b>The ACM-ICPC Asia Regional Contest Beijing Site 2011</b>, <em>Gold Medal</em>.</dd>
-						<dt>2011</dt>
-						<dd><b>The ACM-ICPC Asia Regional Contest Chengdu Site 2011</b>, <em>Gold Medal</em>.<br/>2nd place</dd>
-						<dt>2011</dt>
-						<dd><b>The 3th Sichuan Provincial Collegiate Programming Contest</b>, <em>2nd place</em>.</dd>
-						<dt>2010</dt>
-						<dd><b>The ACM-ICPC Asia Regional Contest Fuzhou Site 2010</b>, <em>Silver Medal</em>.</dd>
-						<dt>2010</dt>
-						<dd><b>The ACM-ICPC Asia Regional Contest Hangzhou Site 2010</b>, <em>Silver Medal</em>.</dd>
-					</dl>
+					<div class="sub-group">
+						<h4>Miscellaneous</h4>
+						<hr/>
+						<div class="item">
+							<div class="title">UESTC ACM-ICPC Team</div>
+							<div class="summary-info">
+								<div class="summary">Team member</div>
+								<div class="time">2010 - now</div>
+							</div>
+							<div class="content">
+								<ul>
+									<li>Learning numerous algorithms and data structures, 
+									particularly in computing geometry and search</li>
+									<li>ACM-ICPC need 3 team members work together in 5 hours, it's needs strong team consciousness</li>
+									<li>In my team, my duty is implement algorithm into code, 
+									and help teammate fix bugs or generate data cases</li>
+									<li>TopCoder algorithm competitions max rating <a href="http://community.topcoder.com/tc?module=MemberProfile&cr=22768107">1976</a>, rank 726 of 9389(2013-6-18), 
+									this competitions need to solve problems efficiently and find out other contestants' bug</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="title">National Olympiad in Informatics Sichuan province team selection contest</div>
+							<div class="summary-info">
+								<div class="summary">Judge and problem setter</div>
+								<div class="time">2012 - 2013</div>
+							</div>
+							<div class="content">
+								<ul>
+									<li>The top level informatics olympiad contest's team selection contest</li>
+									<li>Solve 3 problems in 5 hours, it's superior difficult</li>
+									<li>Need high quality problems</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="title">The 4th Sichuan Provincial Collegiate Programming Contest</div>
+							<div class="summary-info">
+								<div class="summary">Judge and problem setter</div>
+								<div class="time">2012</div>
+							</div>
+							<div class="content">
+								<ul>
+									<li>Due to large gap between different team, we need simple but ponderable problems</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="group">
-					<div class="line"></div>
-					<h3>Languages</h3>
-					<dl>
-						<dt>English</dt>
-						<dd><b>CET band 4</b>, <em>436</em></dd>
-					</dl>
+					<h3>Awards</h3>
+					<hr/>
+					<div class="sub-group">
+						<h4>ACM-ICPC</h4>
+						<hr/>
+						<div class="item">
+							<div class="title">Gold Medal</div>
+							<div class="summary-info">
+								<div class="summary">The ACM-ICPC Asia Regional Contest Chengdu Site 2012</div>
+								<div class="time">2012</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="title">Gold Medal(2nd place)</div>
+							<div class="summary-info">
+								<div class="summary">The ACM-ICPC Asia Regional Contest Jinhua Site 2012</div>
+								<div class="time">2012</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="title">Gold Medal</div>
+							<div class="summary-info">
+								<div class="summary">The ACM-ICPC Asia Regional Contest Beijing Site 2011</div>
+								<div class="time">2011</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="title">Gold Medal(2nd place)</div>
+							<div class="summary-info">
+								<div class="summary">The ACM-ICPC Asia Regional Contest Chengdu Site 2011</div>
+								<div class="time">2011</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="title">2nd place</div>
+							<div class="summary-info">
+								<div class="summary">The 3th Sichuan Provincial Collegiate Programming Contest</div>
+								<div class="time">2011</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="title">Silver Medal</div>
+							<div class="summary-info">
+								<div class="summary">The ACM-ICPC Asia Regional Contest Fuzhou Site 2010</div>
+								<div class="time">2010</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="title">Silver Medal</div>
+							<div class="summary-info">
+								<div class="summary">The ACM-ICPC Asia Regional Contest Hangzhou Site 2010</div>
+								<div class="time">2010</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="group">
-					<div class="line"></div>
-					<h3>Computer skills</h3>
-					<dl>
-						<dt>OS</dt>
-						<dd>linux, mac os</dd>
-						<dt>Languages</dt>
-						<dd>C, C++, Java, Javascript, latex</dd>
-						<dt>IDE</dt>
-						<dd>Vim, IntelliJ IDEA, VS, Eclipse</dd>
-						<dt>Tools</dt>
-						<dd>Subversion, Git</dd>
-						<dt>Algorithm</dt>
-						<dd>Data structures, Dynamic programming, Search, Computation geometry</dd>
-					</dl>
+					<h3>Skill</h3>
+					<hr/>
+					<div class="sub-group">
+						<h4>Languages skills</h4>
+						<hr/>
+						<ul class="description">
+							<li><span class="bold">English:</span><span>CET band 4</span><span class="status">passed</span></li>
+						</ul>
+					</div>
+					<div class="sub-group">
+						<h4>Programming skills</h4>
+						<hr/>
+						<ul class="description">
+							<li><span class="bold">OS:</span><span>linux, OS X(daily work)</span></li>
+							<li><span class="bold">Revision control:</span><span>Subversion, Git</span></li>
+							<li><span class="bold">Languages:</span><span>C, C++, Java, Javascript</span></li>
+							<li><span class="bold">Others:</span><span>MySQL, LATEX</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="group">
+					<h3>Self-assessment</h3>
+					<hr/>
+					<ul class="description">
+						<li><span class="bold">Thinking:</span><span>Analyze problems and find out solution rapidly</span></li>
+						<li><span class="bold">Learning:</span><span>Good self study ability, easy to get started in new technology</span></li>
+						<li><span class="bold">Teamwork:</span><span>Basic communication skills, can express idea clearly</span></li>
+					</ul>
 				</div>
 			</div>
 		</div>
