@@ -2,30 +2,17 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
-		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<style>
+			html {
+				font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier,sans-serif;
+				font-size: 14pt;
+			}
 			a {
 				text-decoration: none;
 			}
-			.mzry-ribbon {
-				background-color: #4285f4;
-				height: 313px;
-				position: absolute;
-				width: 100%;
-				top: 64px;
-			}
-			.mzry-main {
-				margin-top: 80px;
-				flex-shrink: 0;
-				-webkit-flex-shrink: 0;
-				-ms-flex-negative: 0;
-			}
-			.mzry-content {
-				border-radius: 2px;
-				padding: 80px 56px;
-				margin-bottom: 80px;
+			#mzry-wrap {
+				margin: auto;
+				width: 960px;
 			}
 			.mzry-time {
 				text-align: right;
@@ -35,21 +22,51 @@
 				float: left;
 				font-style: italic;
 			}
+			h1, h2, h3, h4, h5, h6 {
+				color: red;
+			}
+			h1, h2, h3, h4, h5, h6, p {
+				padding: 0;
+			}
+			h2, h3 {
+				margin: 16px 0;
+			}
+			h2 {
+				font-size: 60px;
+				line-height: 64px;
+			}
+			h4 {
+				font-size: 32px;
+				line-height: 40px;
+				margin: 8px 0 8px;
+			}
+			h6 {
+				font-size: 24px;
+				line-height: 32px;
+				letter-spacing: .04em;
+				margin: 8px 0 8px;
+			}
+			ul {
+				list-tyle: none;
+				line-height: 24px;
+			}
+			ul > li {
+				color: black;
+				line-height: 24px;
+			}
+			hr {
+				display: block;
+				height: 1px;
+				border: 0;
+				border-top: 2px solid red;
+				margin: 1em 0;
+				padding: 0;
+			}
 		</style>
 		<title>Yun Li's Resume</title>
 	</head>
 	<body>
-		<div class="mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
-			<header class="mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-800">
-			<div class="mdl-layout__header-row">
-				<span class="mdl-layout-title">Yun Li's Resume</span>
-			</div>
-			</header>
-			<div class="mzry-ribbon"></div>
-			<main class="mzry-main mdl-layout__content">
-			<div class="mdl-grid">
-				<div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-				<div class="mzry-content mdl-color--white mdl-shadow--4dp mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+		<div id="mzry-wrap">
 <h2>Yun Li (李昀)</h2>
 
 <p>Software Engineer at Google, <a href="mailto:muziriyun@gmail.com">muziriyun@gmail.com</a>, last updated in Sep. 2015</p>
@@ -141,17 +158,6 @@ with restrictions include time limit, memory limit, security restricition and so
 <li>Recommended for admission to school without China Higher Education Exam (Gaokao, 高考) </li>
 </ul></li>
 </ul>
-				</div>
-			</div>
-			</main>
-			<footer class="mdl-mini-footer">
-			<div class="mdl-mini-footer__left-section">
-				<div class="mdl-logo">Links</div>
-				<ul class="mdl-mini-footer__link-list">
-					<li><a href="http://mzry.moe">Blog</a></li>
-				</ul>
-			</div>
-			</footer>
 		</div>
 	</body>
 </html>
