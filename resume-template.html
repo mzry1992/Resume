@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<style>
+			a {
+				text-decoration: none;
+			}
+			.mzry-ribbon {
+				background-color: #4285f4;
+				height: 313px;
+				position: absolute;
+				width: 100%;
+				top: 64px;
+			}
+			.mzry-main {
+				margin-top: 80px;
+				flex-shrink: 0;
+				-webkit-flex-shrink: 0;
+				-ms-flex-negative: 0;
+			}
+			.mzry-content {
+				border-radius: 2px;
+				padding: 80px 56px;
+				margin-bottom: 80px;
+			}
+			.mzry-time {
+				text-align: right;
+				font-style: italic;
+			}
+			.mzry-title {
+				float: left;
+				font-style: italic;
+			}
+		</style>
+		<title>Yun Li's Resume</title>
+	</head>
+	<body>
+		<div class="mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+			<header class="mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-800">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Yun Li's Resume</span>
+			</div>
+			</header>
+			<div class="mzry-ribbon"></div>
+			<main class="mzry-main mdl-layout__content">
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+				<div class="mzry-content mdl-color--white mdl-shadow--4dp mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+					{{ content }}
+				</div>
+			</div>
+			</main>
+			<footer class="mdl-mini-footer">
+			<div class="mdl-mini-footer__left-section">
+				<div class="mdl-logo">Links</div>
+				<ul class="mdl-mini-footer__link-list">
+					<li><a href="http://mzry.moe">Blog</a></li>
+				</ul>
+			</div>
+			</footer>
+		</div>
+	</body>
+</html>
+
