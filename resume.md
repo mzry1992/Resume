@@ -27,12 +27,14 @@ Software Engineer at Google, [muziriyun@gmail.com](mailto:muziriyun@gmail.com), 
     <div class="mzry-time">Nov 2015 - Present</div> 
   </div>
   * Build the next generation of AdWords front end 
+  * **Related Technology:** Angular 2, Dart
 * **DoubleClick for Publishers Sales Management**
   <div class="mzry-float">
 	  <div class="mzry-title">Web Development</div>
 		<div class="mzry-time">Oct 2014 - Nov 2015</div>
   </div>
 	* Build sales management system for DoubleClick for Publisher
+  * **Related Technology:** Java, GWT 
 * **UESTC ACM-ICPC Online Judge**
   <div class="mzry-float">
 	  <div class="mzry-title">Web Development, AngularJS</div>
