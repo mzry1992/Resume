@@ -1,5 +1,6 @@
 ##Yun Li (李昀)
-Software Engineer at Google, [muziriyun@gmail.com](mailto:muziriyun@gmail.com), last updated in Jan. 2016
+Software Engineer at Google, [muziriyun@gmail.com](mailto:muziriyun@gmail.com),
+last updated in Nov. 2017
 
 -----------------
 
@@ -14,9 +15,6 @@ Software Engineer at Google, [muziriyun@gmail.com](mailto:muziriyun@gmail.com), 
 		<div class="mzry-title">Team member</div>
 		<div class="mzry-time">Jul 2010 - Jun 2014</div>
   </div>
-	* 4 years algorithm contest experience, expert in basic algorithms and data structures
-	* Strong teamwork ability, ACM-ICPC need 3 team members work together in 5 hours to solve about 10 problems
-	* Won multiple awards in algorithm contenst
 
 -----------------
 
@@ -26,22 +24,32 @@ Software Engineer at Google, [muziriyun@gmail.com](mailto:muziriyun@gmail.com), 
     <div class="mzry-title">Web Development</div>
     <div class="mzry-time">Nov 2015 - Present</div> 
   </div>
-  * Build the next generation of AdWords front end 
-  * **Related Technology:** Angular 2, Dart
+	* The new AdWords experience has been launched world widely on Q3 2017,
+	  this tool helps advertiser reaching customers on Google ad network with
+		their ads, we are responsible for display campaign management
+	* I'm the main contributor of UI and testing framework, maintain both server
+	  and front end side code
+  * **Related Technology:** Angular 2, Guice, Dart, Java
 * **DoubleClick for Publishers Sales Management**
   <div class="mzry-float">
 	  <div class="mzry-title">Web Development</div>
 		<div class="mzry-time">Oct 2014 - Nov 2015</div>
   </div>
-	* Build sales management system for DoubleClick for Publisher
-  * **Related Technology:** Java, GWT 
+	* DoubleClick for Publishers is an advertisment service which help publishers
+	  to mange their ad inventory, we are responsible for sales management system
+		which providing workflow efficiency over the entire range of the publishers
+		business
+	* I delivered various features include native ads support, gross rate pricing
+	  model.
+  * **Related Technology:** Guice, GWT, Java 
 * **UESTC ACM-ICPC Online Judge**
   <div class="mzry-float">
 	  <div class="mzry-title">Web Development, AngularJS</div>
 		<div class="mzry-time">2012 - 2014</div>
   </div>
-  * This project is applied for UESTC ACM-ICPC team daily training, it support a simple sandbox service that user can submit and test their programs with pre-construced data,
-	  with restrictions include time limit, memory limit, security restricition and so on, and service will capture the output of their program and compare with standard output
+	* This project is an online system to test programs as well as problem and
+	  contest management, it support a andbox service that user can run programs
+		under restriction (time limit, memory limit, etc)
 	* My role is the system designer and leader of front-end development
 	* **Site:** [http://acm.uestc.edu.cn](http://acm.uestc.edu.cn)
 	* **Related Technology:** Java, MySQL, SpringMVC, Hibernate, AngularJS
@@ -49,21 +57,19 @@ Software Engineer at Google, [muziriyun@gmail.com](mailto:muziriyun@gmail.com), 
 ----------------
 
 ####Awards
-######ACM-ICPC
-* **Gold Medal(2nd place)**
+######ACM International Collegiate Programming Contest
+* **Won 5 Gold Medals during my colledge life**
   <div class="mzry-float">
-	  <div class="mzry-title">The ACM-ICPC Asia Regional Contest Jinhua Site 2012</div>
-		<div class="mzry-time">2012</div>
+	  <div class="mzry-title">
+		  The ACM-ICPC Asia Regional Contest Jinhua Site 2012
+		</div>
+		<div class="mzry-time">Gold Medal (2nd place)</div>
   </div>
-* **Gold Medal(2nd place)**
   <div class="mzry-float">
-	  <div class="mzry-title">The ACM-ICPC Asia Regional Contest Chengdu Site 2011</div>
-		<div class="mzry-time">2011</div>
-  </div>
-* **5 Gold Medals, 2 Silver Medals and 1 Bronze Medal**
-  <div class="mzry-float">
-	  <div class="mzry-title">The ACM-ICPC Asia Regional Contest</div>
-		<div class="mzry-time">2010 - 2013</div>
+	  <div class="mzry-title">
+		  The ACM-ICPC Asia Regional Contest Chengdu Site 2011
+		</div>
+		<div class="mzry-time">Gold Medal (2nd place)</div>
   </div>
 
 ---------------
@@ -74,5 +80,6 @@ Software Engineer at Google, [muziriyun@gmail.com](mailto:muziriyun@gmail.com), 
 		<div class="mzry-title">Bachelor of communication engineering</div>
 		<div class="mzry-time">Jul 2010 - Jun 2014</div>
   </div>
-	* Recommended for admission to school without China Higher Education Exam (Gaokao, 高考) 
+	* Recommended student for admission without attend China national higher
+	  education entrance examination
 
