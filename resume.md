@@ -1,7 +1,7 @@
 ## Yun Li (李昀)
 
 Senior Software Engineer at Google,
-[muziriyun@gmail.com](mailto:muziriyun@gmail.com), last updated in July. 2019
+[muziriyun@gmail.com](mailto:muziriyun@gmail.com), last updated in Feb, 2020
 
 --------------------------------------------------------------------------------
 
